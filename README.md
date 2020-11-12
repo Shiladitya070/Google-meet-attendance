@@ -5,6 +5,6 @@
 
 run in terminal:
 ```
-pip install -r requirements.txt
+pip install -r requirments.txt
 python3 bot.py
 ```
