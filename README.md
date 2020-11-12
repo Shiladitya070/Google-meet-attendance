@@ -1,7 +1,7 @@
 # Google-meet-attendance
 
 
-Made to make it easy to take attendance 
+## Made to make it easy to take attendance 
 
 run in terminal:
 ```
