@@ -13,11 +13,8 @@ import datetime
 # YEAR#MONTH#DAY#HOUR#MINUTE###### DO NOT PUT ZERO BEFORE A NUMBER
 # pause.until(datetime(2020, 3, 27, 11, 29))
 # MAIL & PASSWORD (THE MAIL U WILL USE TO ENTER TO THE MEET)
-# usernameStr = str(input("Enter your school email: "))
-# passwordStr = str(input("password: "))
-usernameStr = str(input("Enter your email address:"))
-passwordStr = str(input("Enter your password:"))
-
+usernameStr = str(input("Enter your school email: "))
+passwordStr = str(input("password: "))
 
 url_meet = str(input("Enter the meeting link: "))
 options = webdriver.ChromeOptions()
