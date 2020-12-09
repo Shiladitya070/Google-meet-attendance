@@ -13,8 +13,10 @@ import datetime
 # YEAR#MONTH#DAY#HOUR#MINUTE###### DO NOT PUT ZERO BEFORE A NUMBER
 # pause.until(datetime(2020, 3, 27, 11, 29))
 # MAIL & PASSWORD (THE MAIL U WILL USE TO ENTER TO THE MEET)
-usernameStr = str(input("Enter your school email: "))
-passwordStr = str(input("password: "))
+# usernameStr = str(input("Enter your school email: "))
+# passwordStr = str(input("password: "))
+usernameStr = "s1247.shiladitya.7115@kvsrokolkata.co.in"
+passwordStr = "shiladityaKv@2004"
 
 
 url_meet = str(input("Enter the meeting link: "))
@@ -51,7 +53,7 @@ def login():
 login()
 
 browser.get(url_meet)
-sleep(6)
+sleep(10)
 cam_mic_selectors = browser.find_elements_by_css_selector(
     'div.U26fgb.JRY2Pb.mUbCce.kpROve.uJNmj.HNeRed')  # camera and mic
 for e in cam_mic_selectors:
@@ -63,9 +65,10 @@ browser.find_element_by_css_selector(
     'div.uArJ5e.UQuaGc.kCyAyd.QU4Gid.foXzLb.IeuGXd').click()  # participant list
 sleep(1)
 names = browser.find_elements_by_css_selector(
-    'div.cSO8I.N4cbF div.G3llDe.Dxboad div.cS7aqe.NkoVdd')  # participants
+    'div.GvcuGe')  # participants
 file1 = open(f"attendence {datetime.date.today()}.txt", "w")
-for e in names[1:]:
+print(names)
+for e in names:
     file1.write(f"{e.text} \n")
     print(e.text)
 
