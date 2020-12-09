@@ -15,8 +15,8 @@ import datetime
 # MAIL & PASSWORD (THE MAIL U WILL USE TO ENTER TO THE MEET)
 # usernameStr = str(input("Enter your school email: "))
 # passwordStr = str(input("password: "))
-usernameStr = "s1247.shiladitya.7115@kvsrokolkata.co.in"
-passwordStr = "shiladityaKv@2004"
+usernameStr = str(input("Enter your email address:"))
+passwordStr = str(input("Enter your password:"))
 
 
 url_meet = str(input("Enter the meeting link: "))
